@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Safe</string>
+
+    <array name="bottom_navication_titles">
+        <item>交流互动</item>
+        <item>紧急求救</item>
+        <item>手机防盗</item>
+        <item>安全检测</item>
+        <item>个人中心</item>
+    </array>
+
+</resources>
