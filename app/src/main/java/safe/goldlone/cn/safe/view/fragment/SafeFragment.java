@@ -10,14 +10,16 @@ import android.view.ViewGroup;
 import safe.goldlone.cn.safe.R;
 
 /**
+ * 安全检测
  * Created by CN on 2018/4/2.
  */
 
-public class HisFragment extends Fragment {
+public class SafeFragment extends Fragment {
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_safe, container, false);
     }
-
 }

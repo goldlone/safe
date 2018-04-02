@@ -9,15 +9,16 @@ import android.view.ViewGroup;
 
 import safe.goldlone.cn.safe.R;
 
-
 /**
- * Created by chenpengfei on 2017/3/21.
+ * 手机防盗
+ * Created by CN on 2018/4/2.
  */
-public class WorkFragment extends Fragment {
+
+public class AntiTheftFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_work, container, false);
+        return inflater.inflate(R.layout.fragment_anti_theft, container, false);
     }
 }

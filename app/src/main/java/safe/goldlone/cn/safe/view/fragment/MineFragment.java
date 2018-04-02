@@ -11,6 +11,7 @@ import safe.goldlone.cn.safe.R;
 
 
 /**
+ * 个人中心
  * Created by chenpengfei on 2017/3/21.
  */
 public class MineFragment extends Fragment {

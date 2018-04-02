@@ -9,11 +9,13 @@ import android.view.ViewGroup;
 
 import safe.goldlone.cn.safe.R;
 
-
 /**
- * Created by chenpengfei on 2017/3/21.
+ * 通讯交流
+ * Created by CN on 2018/4/2.
  */
-public class MainFragment extends Fragment {
+
+public class CommunicationFragment extends Fragment {
+
 
     @Nullable
     @Override

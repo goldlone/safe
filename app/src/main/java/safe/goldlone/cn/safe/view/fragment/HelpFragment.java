@@ -9,15 +9,17 @@ import android.view.ViewGroup;
 
 import safe.goldlone.cn.safe.R;
 
-
 /**
- * Created by chenpengfei on 2017/3/21.
+ * 紧急求救
+ * Created by CN on 2018/4/2.
  */
-public class AppFragment extends Fragment {
+
+public class HelpFragment extends Fragment {
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_app, container, false);
+        return inflater.inflate(R.layout.fragment_help, container, false);
     }
 }

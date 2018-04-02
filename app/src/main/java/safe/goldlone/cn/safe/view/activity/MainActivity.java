@@ -11,11 +11,11 @@ import com.fe.library.adapter.DefaultAdapter;
 
 
 import safe.goldlone.cn.safe.R;
-import safe.goldlone.cn.safe.view.fragment.AppFragment;
-import safe.goldlone.cn.safe.view.fragment.HisFragment;
-import safe.goldlone.cn.safe.view.fragment.MainFragment;
+import safe.goldlone.cn.safe.view.fragment.AntiTheftFragment;
+import safe.goldlone.cn.safe.view.fragment.CommunicationFragment;
+import safe.goldlone.cn.safe.view.fragment.HelpFragment;
 import safe.goldlone.cn.safe.view.fragment.MineFragment;
-import safe.goldlone.cn.safe.view.fragment.WorkFragment;
+import safe.goldlone.cn.safe.view.fragment.SafeFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 R.mipmap.safe_select
         };
         fragments = new Fragment[] {
-                new MainFragment(),
-                new WorkFragment(),
-                new AppFragment(),
-                new MineFragment(),
-                new HisFragment()
+                new CommunicationFragment(),
+                new HelpFragment(),
+                new AntiTheftFragment(),
+                new SafeFragment(),
+                new MineFragment()
         };
 
         tabContainerView = (TabContainerView) findViewById(R.id.tab_containerview_main);
