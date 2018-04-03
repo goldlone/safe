@@ -25,6 +25,7 @@
         app:columnCount="1">
 
         <LinearLayout
+            android:id="@+id/ll_safe_heart_rate"
             android:background="#ffffff"
             android:layout_margin="1dp"
             android:orientation="horizontal"
@@ -43,6 +44,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_safe_foot_monitor"
             android:background="#ffffff"
             android:layout_margin="1dp"
             android:orientation="horizontal"

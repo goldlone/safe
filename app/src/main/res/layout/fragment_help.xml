@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!-- 用来占位标题栏，防止遮挡 -->
     <android.support.design.widget.AppBarLayout
@@ -16,11 +18,175 @@
     </android.support.design.widget.AppBarLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="紧急求救"
-        android:layout_centerInParent="true"/>
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="1"
+        app:rowCount="5">
 
-</RelativeLayout>
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rowCount="1"
+            app:columnCount="2"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_margin="1dp"
+                android:orientation="vertical"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher_round"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:text="定位求救"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_margin="1dp"
+                android:orientation="vertical"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher_round"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:text="安全小知识"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rowCount="1"
+            app:columnCount="2"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_margin="1dp"
+                android:orientation="vertical"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher_round"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:text="闪光灯"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_margin="1dp"
+                android:orientation="vertical"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/safe"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:text="静默模式"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.GridLayout>
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_margin="1dp"
+            android:orientation="horizontal"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher_round"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="隐秘录像"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#878787"
+                android:text="使用帮助："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#878787"
+                android:text="1、按一次上音量键定位求救"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#878787"
+                android:text="2、按两次上音量键隐秘录像"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.GridLayout>
+
+
+
+</LinearLayout>

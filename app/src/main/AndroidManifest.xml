@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="safe.goldlone.cn.safe">
 
+
+    <!--摄像头-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/safe_select"
@@ -9,6 +16,7 @@
         android:roundIcon="@mipmap/safe_select"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- 导航界面 -->
         <activity
             android:name=".view.activity.MainActivity"
             android:label="@string/app_name">
@@ -17,6 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 心率检测 -->
+        <activity android:name=".view.activity.HeartActivity"></activity>
+
+
     </application>
+
+
+
 
 </manifest>

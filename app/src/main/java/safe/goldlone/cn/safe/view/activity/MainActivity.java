@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         getResources().getColor(R.color.colorPrimary),
                         iconImageArray,
                         selectedIconImageArray));
+
     }
 
     private void initToolBar() {
