@@ -50,10 +50,21 @@
             </intent-filter>
         </activity>
 
+
         <!-- 心率检测 -->
         <activity android:name="cn.goldlone.safe.view.activity.HeartActivity"></activity>
         <!-- 足迹异常监测 -->
         <activity android:name="cn.goldlone.safe.view.activity.PathActivity"></activity>
+
+        <!-- 登录 -->
+        <activity android:name=".view.activity.LoginActivity"></activity>
+        <!-- 购物平台 -->
+        <activity android:name=".view.activity.BuyActivity"></activity>
+        <!-- 同城义务服务 -->
+        <!-- 管理家人组 -->
+        <!-- 修改昵称 -->
+        <!-- 修改登录密码 -->
+        <!-- 修改头像 -->
 
 
         <!-- 定位服务 -->
