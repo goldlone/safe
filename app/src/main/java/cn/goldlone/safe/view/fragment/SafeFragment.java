@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import cn.goldlone.safe.R;
 import cn.goldlone.safe.view.activity.HeartActivity;
+import cn.goldlone.safe.view.activity.PathActivity;
 
 /**
  * 安全检测
@@ -20,7 +21,7 @@ import cn.goldlone.safe.view.activity.HeartActivity;
 
 public class SafeFragment extends Fragment implements View.OnClickListener {
 
-    //
+    // 本页面的视图引用
     private View rootView;
     // 心率检测
     private LinearLayout ll_safe_heart_rate;
@@ -65,7 +66,8 @@ public class SafeFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), HeartActivity.class));
                 break;
             case R.id.ll_safe_foot_monitor:
-                Toast.makeText(getContext(), "足迹异常监测", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), "足迹异常监测", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), PathActivity.class));
                 break;
         }
     }
