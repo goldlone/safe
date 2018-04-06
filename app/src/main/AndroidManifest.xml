@@ -61,10 +61,15 @@
         <!-- 购物平台 -->
         <activity android:name=".view.activity.BuyActivity"></activity>
         <!-- 同城义务服务 -->
+        <activity android:name=".view.activity.CityActivity"></activity>
         <!-- 管理家人组 -->
+        <activity android:name=".view.activity.ManagerFamilyActivity"></activity>
         <!-- 修改昵称 -->
+        <activity android:name=".view.activity.UpdateNickNameActivity"></activity>
         <!-- 修改登录密码 -->
+        <activity android:name=".view.activity.UpdatePasswordActivity"></activity>
         <!-- 修改头像 -->
+        <activity android:name=".view.activity.UpdateLogoActivity"></activity>
 
 
         <!-- 定位服务 -->

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -11,11 +12,12 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:title="购物平台"
+            android:layout_height="match_parent"
+            app:title="管理家人组"
             app:titleTextColor="@color/bar_title_color">
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
+
 
     <com.baoyz.widget.PullRefreshLayout
         android:id="@+id/buyRefreshLayout"
@@ -25,7 +27,7 @@
 
         <!-- ListView、ScrollView、RecyclerView、Other 多种-->
         <ListView
-            android:id="@+id/lv_buy_shop"
+            android:id="@+id/lv_manager_family"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none" >

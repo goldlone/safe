@@ -7,27 +7,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
 
-import com.baoyz.widget.PullRefreshLayout;
-
 import cn.goldlone.safe.R;
 
 /**
- * 购物平台
+ * 修改用户头像
+ * @author : Created by CN on 2018/4/5 17:27
  */
-public class BuyActivity extends AppCompatActivity {
+public class UpdateLogoActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private PullRefreshLayout layout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy);
-
-
+        setContentView(R.layout.activity_update_logo);
 
         initToolbar();
-        initView();
     }
 
     private void initToolbar() {
@@ -42,22 +37,6 @@ public class BuyActivity extends AppCompatActivity {
         });
     }
 
-    private void initView() {
-        layout = (PullRefreshLayout) findViewById(R.id.buyRefreshLayout);
-        layout.setRefreshStyle(PullRefreshLayout.STYLE_MATERIAL);
-        layout.setOnRefreshListener(new PullRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                layout.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        // 刷新3秒完成
-                        layout.setRefreshing(false);
-                    }
-                }, 3000);
-            }
-        });
-    }
 
 
 
@@ -70,5 +49,4 @@ public class BuyActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
-
 }

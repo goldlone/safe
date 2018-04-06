@@ -12,9 +12,10 @@ import com.baoyz.widget.PullRefreshLayout;
 import cn.goldlone.safe.R;
 
 /**
- * 购物平台
+ * 同城义务服务
+ * @author : Created by CN on 2018/4/5 17:31
  */
-public class BuyActivity extends AppCompatActivity {
+public class CityActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private PullRefreshLayout layout;
@@ -22,9 +23,7 @@ public class BuyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy);
-
-
+        setContentView(R.layout.activity_city);
 
         initToolbar();
         initView();
@@ -60,7 +59,6 @@ public class BuyActivity extends AppCompatActivity {
     }
 
 
-
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {
@@ -70,5 +68,4 @@ public class BuyActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
-
 }

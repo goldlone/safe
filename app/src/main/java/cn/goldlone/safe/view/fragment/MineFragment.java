@@ -12,7 +12,11 @@ import android.widget.Toast;
 
 import cn.goldlone.safe.R;
 import cn.goldlone.safe.view.activity.BuyActivity;
+import cn.goldlone.safe.view.activity.CityActivity;
 import cn.goldlone.safe.view.activity.LoginActivity;
+import cn.goldlone.safe.view.activity.ManagerFamilyActivity;
+import cn.goldlone.safe.view.activity.UpdateNickNameActivity;
+import cn.goldlone.safe.view.activity.UpdatePasswordActivity;
 
 
 /**
@@ -72,16 +76,20 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 //                Toast.makeText(getActivity(), "购物平台", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_mine_city:
-                Toast.makeText(getActivity(), "同城义务服务", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), CityActivity.class));
+//                Toast.makeText(getActivity(), "同城义务服务", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_mine_manager_family:
-                Toast.makeText(getActivity(), "管理家人组", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), ManagerFamilyActivity.class));
+//                Toast.makeText(getActivity(), "管理家人组", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_mine_update_nick_name:
-                Toast.makeText(getActivity(), "修改昵称", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), UpdateNickNameActivity.class));
+//                Toast.makeText(getActivity(), "修改昵称", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_mine_update_password:
-                Toast.makeText(getActivity(), "修改密码", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), UpdatePasswordActivity.class));
+//                Toast.makeText(getActivity(), "修改密码", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tv_mine_logout:
                 getActivity().finish();

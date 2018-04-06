@@ -92,6 +92,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:src="@mipmap/safe"
                     android:contentDescription="@string/app_name"/>
 
@@ -99,6 +100,7 @@
                     android:id="@+id/tv_mine_buy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -123,6 +125,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:src="@mipmap/safe"
                     android:contentDescription="@string/app_name"/>
 
@@ -130,6 +133,7 @@
                     android:id="@+id/tv_mine_city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -159,12 +163,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:src="@mipmap/safe"
                     android:contentDescription="@string/app_name"/>
                 <TextView
                     android:id="@+id/tv_mine_manager_family"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -190,12 +196,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:src="@mipmap/safe"
                     android:contentDescription="@string/app_name"/>
                 <TextView
                     android:id="@+id/tv_mine_update_nick_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -227,6 +235,7 @@
                     android:id="@+id/tv_mine_update_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -258,6 +267,7 @@
                     android:id="@+id/tv_mine_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"
@@ -289,6 +299,7 @@
                     android:id="@+id/tv_mine_exit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/app_text_size"
                     android:textColor="#000"
                     android:layout_marginStart="16dp"

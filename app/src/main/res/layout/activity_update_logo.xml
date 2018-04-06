@@ -13,7 +13,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="修改昵称"
+            app:title="修改头像"
             app:titleTextColor="@color/bar_title_color">
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
@@ -25,17 +25,13 @@
         android:paddingLeft="32dp"
         android:paddingRight="32dp">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="32dp"
-            app:met_floatingLabel="highlight"
-            app:met_primaryColor="#00BCD4"
-            app:met_maxCharacters="8"
-            app:met_floatingLabelTextColor="#00BCD4"
-            android:singleLine="true"
-            android:hint="新昵称"
-            android:id="@+id/et_update_nickname_new_nickname"/>
+        <com.rey.material.widget.ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_gravity="center_horizontal"
+            />
 
 
         <com.rey.material.widget.Button
