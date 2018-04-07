@@ -7,4 +7,7 @@
 
     <color name="bar_title_color">#fff</color>
 
+    <color name="btn_activity">#009900</color>
+    <color name="btn_off">#CCCCCC</color>
+
 </resources>

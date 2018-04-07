@@ -13,7 +13,9 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:title="通讯交流"
+            app:titleTextColor="@color/bar_title_color">
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
@@ -32,15 +34,15 @@
             app:layout_columnWeight="1"
             android:gravity="center">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/chat"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
+                android:textSize="@dimen/app_text_size"
                 android:textColor="#000"
                 android:text="通讯聊天"/>
         </LinearLayout>
@@ -53,15 +55,15 @@
             android:gravity="center"
             android:background="#ffffff">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/homework"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
+                android:textSize="@dimen/app_text_size"
                 android:textColor="#000"
                 android:text="批改作业"/>
         </LinearLayout>
@@ -73,15 +75,15 @@
             app:layout_columnWeight="1"
             android:gravity="center">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/story"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
+                android:textSize="@dimen/app_text_size"
                 android:textColor="#000"
                 android:text="故事聆听"/>
         </LinearLayout>
@@ -93,15 +95,15 @@
             app:layout_columnWeight="1"
             android:gravity="center">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/message"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
+                android:textSize="@dimen/app_text_size"
                 android:textColor="#000"
                 android:text="消息提醒"/>
         </LinearLayout>

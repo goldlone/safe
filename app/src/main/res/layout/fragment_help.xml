@@ -13,7 +13,9 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:title="紧急求救"
+            app:titleTextColor="@color/bar_title_color">
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
@@ -33,6 +35,7 @@
             app:layout_columnWeight="1">
 
             <LinearLayout
+                android:id="@+id/ll_help_location"
                 android:background="#ffffff"
                 android:layout_margin="1dp"
                 android:orientation="vertical"
@@ -40,9 +43,10 @@
                 app:layout_columnWeight="1"
                 android:gravity="center">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/ic_launcher_round"
+                    android:id="@+id/iv_help_location"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/location_act"
                     />
                 <TextView
                     android:layout_width="100dp"
@@ -55,6 +59,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_help_knowledge"
                 android:background="#ffffff"
                 android:layout_margin="1dp"
                 android:orientation="vertical"
@@ -62,9 +67,10 @@
                 app:layout_columnWeight="1"
                 android:gravity="center">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/ic_launcher_round"
+                    android:id="@+id/iv_help_knowledge"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/knowledge"
                     />
                 <TextView
                     android:layout_width="100dp"
@@ -87,6 +93,7 @@
             app:layout_columnWeight="1">
 
             <LinearLayout
+                android:id="@+id/ll_help_light"
                 android:layout_width="wrap_content"
                 android:background="#ffffff"
                 android:layout_margin="1dp"
@@ -95,9 +102,10 @@
                 app:layout_columnWeight="1"
                 android:gravity="center">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/ic_launcher_round"
+                    android:id="@+id/iv_help_light"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/light_none"
                     />
                 <TextView
                     android:layout_width="100dp"
@@ -110,6 +118,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_help_quiet"
                 android:layout_width="wrap_content"
                 android:background="#ffffff"
                 android:layout_margin="1dp"
@@ -118,9 +127,10 @@
                 app:layout_columnWeight="1"
                 android:gravity="center">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/safe"
+                    android:id="@+id/iv_help_quiet"
+                    android:layout_width="68dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/quiet_none"
                     />
                 <TextView
                     android:layout_width="100dp"
@@ -135,6 +145,7 @@
         </android.support.v7.widget.GridLayout>
 
         <LinearLayout
+            android:id="@+id/ll_help_video"
             android:background="#ffffff"
             android:layout_margin="1dp"
             android:orientation="horizontal"
@@ -142,14 +153,18 @@
             app:layout_columnWeight="1"
             android:gravity="center">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher_round"
+                android:id="@+id/iv_help_video"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/video_none"
+                android:layout_gravity="center"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
                 android:textSize="20sp"
                 android:textColor="#000"
                 android:text="隐秘录像"/>

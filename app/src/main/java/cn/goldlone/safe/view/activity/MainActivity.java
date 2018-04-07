@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initToolBar();
         initView();
     }
 
@@ -67,31 +66,5 @@ public class MainActivity extends AppCompatActivity {
                         iconImageArray,
                         selectedIconImageArray));
 
-    }
-
-    private void initToolBar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitleTextColor(Color.WHITE);
-        toolbar.setTitle("标题");
-        // 标题栏按钮
-//        toolbar.inflateMenu(R.menu.base_toolbar_menu);
-//        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem item) {
-//                if(item.getItemId() == R.id.action_default) {
-//                    tabContainerView.setAdapter(new DefaultAdapter(BarActivity.this, fragments, getSupportFragmentManager(), getResources().getStringArray(R.array.titleArray),
-//                            getResources().getColor(R.color.colorPrimary), iconImageArray, selectedIconImageArray));
-//                }
-//                if(item.getItemId() == R.id.action_one) {
-//                    tabContainerView.setAdapter(new ExampleOneAdapter(BarActivity.this, fragments, getSupportFragmentManager(),
-//                            getResources().getStringArray(R.array.exampleOneArray)));
-//                }
-//                if(item.getItemId() == R.id.action_two) {
-//                    tabContainerView.setAdapter(new ExampleTwoAdapter(BarActivity.this, fragments, getSupportFragmentManager(),
-//                            mIconArray));
-//                }
-//                return true;
-//            }
-//        });
     }
 }
