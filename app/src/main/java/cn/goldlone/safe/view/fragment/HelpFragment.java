@@ -21,6 +21,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import cn.goldlone.safe.R;
+import cn.goldlone.safe.view.activity.RecordActivity;
 
 /**
  * 紧急求救
@@ -151,12 +152,13 @@ public class HelpFragment extends Fragment implements View.OnClickListener {
             case R.id.ll_help_video:
                 if(sw_video) {
                     sw_video = false;
-                    Toast.makeText(getActivity(), "关闭隐蔽录像", Toast.LENGTH_SHORT).show();
-                    iv_help_video.setImageResource(R.mipmap.video_none);
+//                    Toast.makeText(getActivity(), "关闭隐蔽录像", Toast.LENGTH_SHORT).show();
+//                    iv_help_video.setImageResource(R.mipmap.video_none);
                 } else {
                     sw_video = true;
-                    Toast.makeText(getActivity(), "启动隐蔽录像", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getActivity(), "启动隐蔽录像", Toast.LENGTH_SHORT).show();
                     iv_help_video.setImageResource(R.mipmap.video_act);
+                    startActivity(new Intent(getActivity(), RecordActivity.class));
                 }
                 break;
         }
