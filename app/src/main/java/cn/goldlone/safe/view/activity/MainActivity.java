@@ -1,10 +1,14 @@
 package cn.goldlone.safe.view.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.widget.Toast;
 
 import com.fe.library.TabContainerView;
 import com.fe.library.adapter.DefaultAdapter;
@@ -23,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private TabContainerView tabContainerView;
     private int[] iconImageArray, selectedIconImageArray;
     private Fragment[] fragments;
+
+    // 监听两次按键
+    private long firstClickTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,5 +73,41 @@ public class MainActivity extends AppCompatActivity {
                         iconImageArray,
                         selectedIconImageArray));
 
+    }
+
+
+
+
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_DOWN: // 发送求救短信
+//                helpFragment.sendHelpMessage();
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_UP: // 启动隐秘录像
+                clickEvent();
+            default:
+                break;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    /**
+     * 监听按两次下音量键
+     */
+    private void clickEvent() {
+        Log.i("隐秘录像","点击下音量键： "+firstClickTime);
+        long secondClickTime = System.currentTimeMillis();
+        long dtime = secondClickTime - firstClickTime;
+        if(dtime < 500){
+            // 实现双击
+//            Intent intent=new Intent(this, RecordActivity.class);
+//            startActivity(intent);
+            Toast.makeText(this, "开启隐秘录像", Toast.LENGTH_SHORT).show();
+        } else{
+            firstClickTime = System.currentTimeMillis();
+        }
     }
 }
